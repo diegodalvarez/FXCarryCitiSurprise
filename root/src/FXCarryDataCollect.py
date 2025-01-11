@@ -22,6 +22,8 @@ class FXData:
         if os.path.exists(self.raw_path)  == False: os.makedirs(self.raw_path)
         
         self.bbg_raw_path = r"/Users/diegoalvarez/Desktop/BBGData"
+        if os.path.exists(self.bbg_raw_path) == False: 
+            self.bbg_raw_path = r"C:\Users\Diego\Desktop\app_prod\BBGData"
         
         self.bbg_ticker_path = os.path.join(self.bbg_raw_path, "root", "BBGTickers.xlsx")
         self.df_tickers      = (pd.read_excel(io = self.bbg_ticker_path))
