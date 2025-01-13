@@ -77,7 +77,7 @@ class PCAModel(FXData):
             df_out = (df_fitted_values.merge(
                 right = df_var, how = "inner", on = ["pc"]))
             
-            if verbose == True: print("Saving PCA data")
+            if verbose == True: print("Saving PCA data\n")
             df_out.to_parquet(path = file_path, engine = "pyarrow")
             
         return df_out
@@ -144,8 +144,6 @@ class PCAModel(FXData):
             
         return df_signal, df_params
         
-
-            
 def main() -> None: 
         
     PCAModel().pca(verbose = True)

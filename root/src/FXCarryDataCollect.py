@@ -13,7 +13,7 @@ class FXData:
 
     def __init__(self) -> None: 
         
-        self.root_path = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+        self.root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
         self.repo_path = os.path.abspath(os.path.join(self.root_path, os.pardir))
         self.data_path = os.path.join(self.repo_path, "data")
         self.raw_path  = os.path.join(self.data_path, "RawData")
@@ -28,7 +28,6 @@ class FXData:
         self.bbg_ticker_path = os.path.join(self.bbg_raw_path, "root", "BBGTickers.xlsx")
         self.df_tickers      = (pd.read_excel(io = self.bbg_ticker_path))
         
-    
     def get_carry_return(self, verbose: bool = False) -> pd.DataFrame:
         
         file_path = os.path.join(self.raw_path, "FXCarryReturn.parquet")
