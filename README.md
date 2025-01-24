@@ -23,9 +23,9 @@ Each portfolios regresses the top $n$ PCs (i.e. the 10th regression is the $Rtn 
 
 
 # Todo
-1. Bootstrap OLS model
-2. Make Model comparison
-3. Raw Citi Surprise residual trading
-4. add in skewness of returns measurement
+1. Performance comparitive analysis for bootstrap
+2. Make model comparison (add in skewness of returns measurement)
+3. Rolling Beta
+4. Raw Citi Surprise residual trading
 5. Baltas Optimizing cross-asset carry -> 6.1 Downside risk analysis
 
