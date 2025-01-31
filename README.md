@@ -23,7 +23,7 @@ Each portfolios regresses the top $n$ PCs (i.e. the 10th regression is the $Rtn 
 
 
 # Todo
-* Find how fast expanding $\beta$ settle
+* Find how fast expanding $\beta$ settle (push expanding OS to src)
 * consistency of sharpes / perf across bootstraps and regression
 * Make model comparison (add in skewness of returns measurement)
 * Baltas Optimizing cross-asset carry -> 6.1 Downside risk analysis
